@@ -1,0 +1,226 @@
+/* Google font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* CSS for trending section */
+
+.main-layout{
+    width: 950px;
+    margin-left: 50px;
+    padding-top: 50px;
+    color: white;
+}
+
+.trending{
+    margin-top: 20px;
+    height: 390px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    margin-left: 60px;
+}
+
+.trending img{
+    width: 275px;
+    height: 275px;
+    transition: .5s;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.trending img:hover{
+    width: 340px;
+    height: 340px;
+}
+
+
+/* Css for laterst Release */
+.h2-headings{
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.latest{
+    color: white;
+    display: grid;
+    margin-left: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.album{
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    width: 300px;
+    cursor: pointer;
+}
+
+.album img{
+    width: 150px;
+}
+
+.album img:hover{
+    box-shadow: 4px 4px 27px #242020;
+}
+
+.album-details p{
+    width: 150px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    margin: 0px;
+}
+
+.album-stats a{
+    font-size: 12px;
+    color: #3f729b;
+}
+.album-stats{
+    font-size: 12px;
+    color: #3f729b;
+}
+
+.album i{
+    position: relative;
+    margin-top: -70px;
+    margin-left: 100px;
+}
+
+.album i:hover .dropdown{
+    display: inline-block;
+}
+
+.dropdown{
+    width: 93px;
+    position: absolute;
+    left: -80px;
+    top: 10px;
+    background-color: rgba(167, 162, 162, 0);
+    display: none;
+    /* transition: opacity 0.3s; */
+    color: black;
+    border-radius: 2px;
+}
+
+.dropdown p{
+    width: 95px;
+    color: white;
+    padding: 4px;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.dropdown p:hover{
+    background-color: rgb(72,80,72);
+}
+
+/* Css for popular artist */
+.artists{
+    display: flex;
+}
+
+.artists img{
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin: 5px 8px;
+}
+
+.artists a {
+    text-decoration: none;
+}
+
+.masterArtist{
+    border: none;
+    height: 120px;
+    width: 120px;
+    background-image: url(../assests/artists/sooryagayathri.jpg);
+    background-size: contain;
+    border-radius: 100%;
+    margin: 5px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.masterArtist:hover{
+    box-shadow: 1px 1px 17px 2px rgb(58, 49, 49);
+}
+
+.icon{
+    font-size: 0px;
+}
+.masterArtist:hover .icon{
+    font-size: 23px;
+    color: white;
+}
+
+
+/* Display for General Section */
+.display-container{
+    display: flex;
+    position: relative;
+    /* justify-content: space-between; */
+}
+.display-container .seeAll{
+    position: absolute;
+    right: 2%;
+    font-size: 12px;
+    color: grey;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    background-color: rgb(17, 15, 15);
+    border-radius: 8px;
+    margin: 14px;
+    margin-top: 20px;
+}
+.display:hover{
+    cursor: pointer;
+    background-color: rgb(36, 32, 32);
+    transition: 0.35s;
+}
+.display .display-image{
+    padding: 15px 15px 10px 15px;
+}
+.display-container .display img{
+    width: 180px;
+    border-radius: 5px;
+    transition: 0.35s;
+}
+.display-container .display img:hover {
+    padding: 5px;
+    border-radius: 5px;
+}
+.display p {
+    padding: 0px 15px;
+}
+.display .display-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+.display .desc {
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    color: grey;
+}
+
+/***************************** some remaining css specific ******************************/
+.focus-baseline {
+    margin-top: -2px;
+    font-size: 12px;
+    color: #C51230;
+  }

@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    padding-bottom: 100px;
+}
+
+.header-container{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    color: white;
+    background-image: url('../assests/header-images/universe.jpg');
+    z-index: 1;
+    position: fixed;
+}
+
+
+/* left-section */
+
+.header-container .left-side{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+.left-side img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.left-side h3{
+    display: inline-block;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 3px;
+    margin-right: 100px;
+    line-height: 15px;
+}
+
+.left-side h3 p{
+    margin-bottom: 5px;
+}
+
+.left-side  h3 .logo-text{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: #c51230;
+}
+
+
+.left-side p{
+    cursor: pointer;
+    color: #015CC8;
+    display: inline-block;
+}
+
+.left-side p:hover{
+    color: #c51230;
+}
+
+/* right-section */
+.header-container .right-side{
+    display: flex;
+    margin-left:700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side img{
+    height: 30px;
+}
+
+.right-side .search-icon{
+    background-color: rgba(5, 2, 23, 0.368);
+    padding: 5px 3px 5px 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.right-side .search-song{
+    height: 30px;
+    width: 250px;
+    font-size: 16px;
+    background-color: rgba(5, 2, 23, 0.368);
+    color: grey;
+    outline: none;
+    border: 0px solid white;
+}
+
+.right-side .voice-search-icon{
+    background-color: rgba(120, 220, 89, 0.251);
+    padding: 5px;
+    /* margin-left: -3px; */
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+
+.notification{
+    height: 11px !important;
+    width: 11px;
+    padding: 0px !important;
+    background-color: rgb(182, 6, 6);
+    position: relative;
+    color: white;
+    font-size: 8px;
+    border-radius: 100%;
+    top: -10%;
+    left: -2%;
+    text-align: center;
+    padding: 2px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.right-side i {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.right-side .profile-image {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 50px;
+    background-size: cover;
+    cursor: pointer;
+}
